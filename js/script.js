@@ -43,6 +43,12 @@ createApp ({
             } else {
                 this.currentImage = 4;
             }
+        },
+        active(i) {
+            if (this.currentImage == i) {
+                return "thumb active"
+            }
+            return "thumb"
         }
     }
 }).mount('#app')
